@@ -40,8 +40,8 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start gap-3 text-gray-300">
                 <Mail size={20} className="text-brand mt-1" />
-                <a href="mailto:contato@amorimergonomia.com.br" className="hover:text-white transition-colors break-all">
-                  contato@amorimergonomia.com.br
+                <a href="mailto:amoriim.ergonomia@gmail.com" className="hover:text-white transition-colors break-all">
+                  amoriim.ergonomia@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3 text-gray-300">

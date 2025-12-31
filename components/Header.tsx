@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
             </span>
             <span className="flex items-center gap-2 hover:text-brand-light transition-colors cursor-default">
               <Mail size={14} className="text-brand animate-[pulse_2s_ease-in-out_infinite]" /> 
-              contato@amorimergonomia.com.br
+              amoriim.ergonomia@gmail.com
             </span>
           </div>
           <span className="flex items-center gap-2 font-semibold">
