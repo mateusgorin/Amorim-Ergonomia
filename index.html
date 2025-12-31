@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amorim Ergonomia - Soluções em Ergonomia e NR-17</title>
+    
     <!-- Favicon utilizando a logo oficial -->
     <link rel="icon" type="image/png" href="https://i.ibb.co/pvxZtYpp/Chat-GPT-Image-18-de-dez-de-2025-09-15-29.png" />
+    <link rel="shortcut icon" href="https://i.ibb.co/pvxZtYpp/Chat-GPT-Image-18-de-dez-de-2025-09-15-29.png" />
     <link rel="apple-touch-icon" href="https://i.ibb.co/pvxZtYpp/Chat-GPT-Image-18-de-dez-de-2025-09-15-29.png" />
     
     <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Amorim Ergonomia - Soluções em Ergonomia e NR-17" />
+    <meta property="og:description" content="Consultoria especializada em ergonomia, NR-17 e saúde corporativa em Brasília." />
     <meta property="og:image" content="https://i.ibb.co/pvxZtYpp/Chat-GPT-Image-18-de-dez-de-2025-09-15-29.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://i.ibb.co/pvxZtYpp/Chat-GPT-Image-18-de-dez-de-2025-09-15-29.png" />
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,6 +35,15 @@
             },
             fontFamily: {
               sans: ['Montserrat', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
             }
           }
         }
