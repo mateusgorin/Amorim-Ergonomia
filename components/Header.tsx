@@ -105,7 +105,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
             <img 
               src="https://i.postimg.cc/MHmKmCdh/Picsart-26-04-08-22-13-00-828.png" 
               alt="Amorim Ergonomia" 
-              className="block md:hidden h-[70px] w-auto object-contain mb-[-2px]"
+              className="block md:hidden h-[60px] w-auto object-contain"
             />
           </div>
 
