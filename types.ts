@@ -4,6 +4,7 @@ export interface BlogPost {
   content: string; // Markdown or HTML string
   imageUrl: string;
   tags: string[];
+  slug: string;
 }
 
 export interface ServiceItem {

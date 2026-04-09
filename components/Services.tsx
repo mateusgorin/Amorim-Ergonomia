@@ -47,6 +47,12 @@ const Services: React.FC<ServicesProps> = ({ onOpenModal }) => {
               <p className="text-gray-300 leading-relaxed">
                 {service.description}
               </p>
+              <button
+                onClick={onOpenModal}
+                className="mt-6 inline-flex items-center gap-1 text-sm font-bold text-brand/80 hover:text-white hover:bg-brand px-4 py-2 rounded-full border border-brand/30 hover:border-brand transition-all duration-200"
+              >
+                Solicitar este serviço →
+              </button>
             </div>
           ))}
         </div>

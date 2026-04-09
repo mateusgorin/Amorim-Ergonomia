@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 
 interface HeaderProps {
   onOpenModal: () => void;
@@ -7,6 +8,40 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [isAtTop, setIsAtTop] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const controlNavbar = () => {
+      if (typeof window !== 'undefined') {
+        const currentScrollY = window.scrollY;
+        
+        // Check if at the very top
+        setIsAtTop(currentScrollY < 10);
+
+        // Always show at the very top
+        if (currentScrollY < 10) {
+          setIsVisible(true);
+        } else {
+          // Hide if scrolling down, show if scrolling up
+          if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            setIsVisible(false);
+          } else if (currentScrollY < lastScrollY) {
+            setIsVisible(true);
+          }
+        }
+        
+        setLastScrollY(currentScrollY);
+      }
+    };
+
+    window.addEventListener('scroll', controlNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', controlNavbar);
+    };
+  }, [lastScrollY]);
 
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
@@ -17,40 +52,55 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
   };
 
   return (
-    <header className="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+    <motion.header 
+      initial={{ y: 0 }}
+      animate={{ y: isVisible ? 0 : -150 }}
+      transition={{ duration: 0.3, ease: 'easeInOut' }}
+      className="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50"
+    >
       {/* Top Bar */}
-      <div className="bg-gray-900 text-white text-sm py-2 px-4 hidden md:block">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex space-x-6">
-            <span className="flex items-center gap-2 hover:text-brand-light transition-colors cursor-default">
-              <Phone size={14} className="text-brand animate-[tada_1.5s_ease-in-out_infinite]" /> 
-              Ligue Agora: (61) 9 9688-3389
-            </span>
-            <span className="flex items-center gap-2 hover:text-brand-light transition-colors cursor-default">
-              <Mail size={14} className="text-brand animate-[pulse_2s_ease-in-out_infinite]" /> 
-              amoriim.ergonomia@gmail.com
-            </span>
-          </div>
-          <span className="flex items-center gap-2 font-semibold">
-            <MapPin size={14} className="text-brand" />
-            Atendemos Brasília
-          </span>
-        </div>
-      </div>
+      <AnimatePresence>
+        {isAtTop && (
+          <motion.div 
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="bg-gray-900 text-white text-sm py-2 px-4 hidden md:block overflow-hidden"
+          >
+            <div className="max-w-7xl mx-auto flex justify-between items-center">
+              <div className="flex space-x-6">
+                <span className="flex items-center gap-2 hover:text-brand-light transition-colors cursor-default">
+                  <Phone size={14} className="text-brand hover:text-brand-light transition-colors" /> 
+                  Ligue Agora: (61) 9 9688-3389
+                </span>
+                <span className="flex items-center gap-2 hover:text-brand-light transition-colors cursor-default">
+                  <Mail size={14} className="text-brand" /> 
+                  amoriim.ergonomia@gmail.com
+                </span>
+              </div>
+              <span className="flex items-center gap-2 font-semibold">
+                <MapPin size={14} className="text-brand" />
+                Atendemos Brasília
+              </span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo(0,0)}>
             <img 
-              src="https://i.ibb.co/pvxZtYpp/Chat-GPT-Image-18-de-dez-de-2025-09-15-29.png" 
+              src="https://i.postimg.cc/hG0x63Pg/Picsart-26-04-08-13-16-58-293.png" 
               alt="Amorim Ergonomia" 
               className="h-20 w-auto object-contain"
             />
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-8 items-center">
+          <nav className="hidden md:flex space-x-8 items-center" aria-label="Navegação principal">
             {['Como ajudamos sua Empresa', 'Nossos Serviços', 'Quem Somos', 'Dúvidas Comuns'].map((item, index) => {
                const id = item === 'Como ajudamos sua Empresa' ? 'problems' : 
                           item === 'Nossos Serviços' ? 'services' : 
@@ -82,7 +132,12 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 hover:text-brand focus:outline-none">
+            <button 
+              onClick={() => setIsOpen(!isOpen)} 
+              className="text-gray-600 hover:text-brand focus:outline-none"
+              aria-label={isOpen ? "Fechar menu" : "Abrir menu"} 
+              aria-expanded={isOpen}
+            >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
@@ -123,7 +178,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
           </div>
         </div>
       )}
-    </header>
+    </motion.header>
   );
 };
 

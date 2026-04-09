@@ -14,7 +14,7 @@ const Benefits: React.FC<BenefitsProps> = ({ onOpenModal }) => {
   ];
 
   return (
-    <section className="py-20 bg-brand text-white text-center">
+    <section className="pt-16 pb-12 bg-brand text-white text-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-semibold mb-6">
           Evite multas, reduza riscos e mantenha sua empresa 100% em conformidade

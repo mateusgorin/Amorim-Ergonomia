@@ -7,22 +7,22 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gray-50">
+    <section className="relative pt-36 pb-8 lg:pt-44 lg:pb-12 overflow-hidden bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           
           <div className="w-full lg:w-1/2 space-y-8 animate-fade-in-up">
-            <div className="inline-block px-4 py-1 bg-brand/10 rounded-full text-brand font-semibold text-sm tracking-wider mb-2">
+            <div className="inline-block px-5 py-2 bg-brand/15 rounded-full text-brand font-bold text-xs sm:text-sm tracking-widest mb-6 border border-brand/30 shadow-sm">
               CONSULTORIA ESPECIALIZADA
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans font-semibold text-gray-900 leading-tight">
-              Ergonomia em Brasília com o <span className="text-brand">Melhor Retorno</span> para sua Empresa
+              Sua empresa está pronta para uma <span className="text-brand">fiscalização do MTE</span>?
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl font-sans">
-              Reduza afastamentos, aumente a produtividade e mantenha sua empresa 100% em conformidade com a NR-17 de forma simples, rápida e sem custos desnecessários.
+              A Amorim Ergonomia entrega laudos NR-17 completos, aceitos em auditorias do Ministério do Trabalho, e te ajuda a evitar multas de até <strong>R$ 6.000 por infração</strong> — com atendimento rápido e custo acessível para empresas de todos os tamanhos em Brasília-DF.
             </p>
             <p className="text-gray-600 leading-relaxed max-w-2xl font-sans">
-              Somos uma consultoria especializada em ergonomia que entrega soluções práticas, eficientes e totalmente adaptadas à realidade de cada negócio. Nosso objetivo é garantira ambientes de trabalho mais saudáveis, colaboradores mais motivados e empresas mais competitivas.
+              Emitimos AEP e AET em conformidade com a NR-17 atualizada. Atendemos empresas de todos os portes, do pequeno negócio à corporação, com prazo ágil e suporte contínuo via WhatsApp.
             </p>
             
             <div className="pt-4">
@@ -42,6 +42,10 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
               <img 
                 src="https://i.ibb.co/RWLMPHm/Whats-App-Image-2025-12-18-at-08-59-00.jpg" 
                 alt="Profissional de ergonomia avaliando ambiente" 
+                loading="eager"
+                fetchPriority="high"
+                width="600"
+                height="500"
                 className="block w-auto h-auto max-h-[500px] lg:max-h-[600px] object-contain transform hover:scale-105 transition-transform duration-700"
               />
               

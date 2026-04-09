@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start gap-3 text-gray-300">
                 <Mail size={20} className="text-brand mt-1" />
-                <a href="mailto:amoriim.ergonomia@gmail.com" className="hover:text-white transition-colors break-all">
+                <a href="mailto:amoriim.ergonomia@gmail.com" className="hover:text-white transition-colors break-words">
                   amoriim.ergonomia@gmail.com
                 </a>
               </li>
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
 
           {/* Hours Column */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold text-brand">Horário de Atendimento</h4>
+            <h4 className="text-base font-semibold text-brand whitespace-nowrap">Horário de Atendimento</h4>
             <div className="flex items-start gap-3 text-gray-300">
               <Clock size={20} className="text-brand mt-1" />
               <div>
@@ -84,7 +84,16 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} AMORIM ERGONOMIA. Todos os direitos reservados.
           </p>
           <p className="text-gray-600 text-xs">
-            Desenvolvido por <a href="https://www.gorinsoluções.com.br" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand transition-colors font-medium">Gorin Soluções</a>
+            CNPJ: 42.360.671/0001-03 &bull; Brasília-DF &bull; amoriim.ergonomia@gmail.com
+          </p>
+          <p className="text-gray-600 text-xs">
+            Ao usar este site você concorda com o uso de dados para fins de contato, conforme a <span className="text-gray-500 hover:text-brand cursor-pointer transition-colors">Lei Geral de Proteção de Dados (LGPD)</span>.
+          </p>
+          <p className="text-gray-600 text-xs mt-1">
+            Desenvolvido por{' '}
+            <a href="https://www.gorinsolucoes.com.br/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand transition-colors font-medium">
+              Gorin Soluções
+            </a>
           </p>
         </div>
       </div>

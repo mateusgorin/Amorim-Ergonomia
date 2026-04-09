@@ -9,7 +9,6 @@ interface ContactModalProps {
 const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
     company: ''
   });
@@ -19,7 +18,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Formata a mensagem para o WhatsApp
-    const text = `Olá, gostaria de falar com um consultor.\n\n*Nome:* ${formData.name}\n*Empresa:* ${formData.company}\n*Email:* ${formData.email}\n*Telefone:* ${formData.phone}`;
+    const text = `Olá! Vim pelo site e gostaria de falar com um consultor.\n\n*Nome:* ${formData.name}\n*Empresa:* ${formData.company}\n*Telefone:* ${formData.phone}`;
     const encodedText = encodeURIComponent(text);
     
     // Abre o WhatsApp
@@ -32,7 +31,12 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+    <div 
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+      role="dialog" 
+      aria-modal="true" 
+      aria-labelledby="modal-title"
+    >
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" onClick={onClose}></div>
       
@@ -45,9 +49,9 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
           >
             <X size={24} />
           </button>
-          <h3 className="text-xl font-bold mb-2 font-sans">Fale com consultor agora</h3>
+          <h3 id="modal-title" className="text-xl font-bold mb-2 font-sans">Fale com consultor agora</h3>
           <p className="text-sm opacity-90 font-sans leading-relaxed">
-            Preencha os dados abaixo para falar agora no whatsapp com um consultor tire todas as dúvidas e receba uma proposta gratuita
+            Preencha seus dados e fale agora com a Vanessa pelo WhatsApp. Resposta em até 1 hora em dias úteis.
           </p>
         </div>
         
@@ -60,18 +64,6 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
               required 
               className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all font-sans"
               value={formData.name}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1 font-sans">E-mail para receber cópia do orçamento</label>
-            <input 
-              type="email" 
-              name="email" 
-              required 
-              className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand outline-none transition-all font-sans"
-              value={formData.email}
               onChange={handleChange}
             />
           </div>
