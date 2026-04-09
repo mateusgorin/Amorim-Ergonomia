@@ -89,9 +89,12 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
       </AnimatePresence>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo(0,0)}>
+        <div className="flex justify-between items-center h-24 relative">
+          {/* Logo - Centered on mobile, left-aligned on desktop */}
+          <div 
+            className="flex-shrink-0 flex items-center cursor-pointer absolute left-1/2 -translate-x-1/2 md:static md:left-0 md:translate-x-0" 
+            onClick={() => window.scrollTo(0,0)}
+          >
             <img 
               src="https://i.postimg.cc/hG0x63Pg/Picsart-26-04-08-13-16-58-293.png" 
               alt="Amorim Ergonomia" 
@@ -100,7 +103,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-8 items-center" aria-label="Navegação principal">
+          <nav className="hidden md:flex space-x-8 items-center ml-auto" aria-label="Navegação principal">
             {['Como ajudamos sua Empresa', 'Nossos Serviços', 'Quem Somos', 'Dúvidas Comuns'].map((item, index) => {
                const id = item === 'Como ajudamos sua Empresa' ? 'problems' : 
                           item === 'Nossos Serviços' ? 'services' : 

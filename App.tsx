@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Problems from './components/Problems';
@@ -27,6 +27,16 @@ const HomePage: React.FC<{ openModal: () => void }> = ({ openModal }) => (
   </main>
 );
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -35,6 +45,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="font-sans text-gray-800 bg-white selection:bg-brand selection:text-white">
         <Header onOpenModal={openModal} />
         <Routes>

@@ -18,7 +18,7 @@ const BlogPostPage: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white pt-32 pb-20">
+    <div className="min-h-screen bg-white pt-40 pb-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
         <Link to="/#blog" className="inline-flex items-center gap-2 text-brand font-semibold mb-8 hover:underline text-sm">
           <ArrowLeft size={16} /> Voltar ao blog
