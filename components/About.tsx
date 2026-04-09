@@ -15,14 +15,14 @@ const About: React.FC = () => {
         {/* Row 1: Photo and Main Info */}
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-16">
           <div className="w-full lg:w-1/2 relative flex justify-center">
-            <div className="relative w-full max-w-xl aspect-[4/3] lg:aspect-auto">
+            <div className="relative w-full max-w-xl">
               <img 
                 src="https://i.ibb.co/Hp21608R/Whats-App-Image-2025-12-18-at-08-59-09.jpg" 
                 alt="Equipe Amorim Ergonomia" 
                 loading="lazy"
                 width="600"
                 height="500"
-                className="rounded-3xl shadow-2xl w-full h-full object-cover border-4 border-white"
+                className="rounded-3xl shadow-2xl w-full h-auto border-4 border-white"
               />
             </div>
           </div>
