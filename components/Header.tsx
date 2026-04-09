@@ -89,7 +89,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
       </AnimatePresence>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24 relative">
+        <div className="flex justify-between items-center h-[60px] relative">
           {/* Logo - Centered on mobile, left-aligned on desktop */}
           <div 
             className="flex-shrink-0 flex items-center cursor-pointer absolute left-1/2 -translate-x-1/2 md:static md:left-0 md:translate-x-0" 
@@ -98,7 +98,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
             <img 
               src="https://i.postimg.cc/hG0x63Pg/Picsart-26-04-08-13-16-58-293.png" 
               alt="Amorim Ergonomia" 
-              className="h-20 w-auto object-contain"
+              className="h-[60px] w-auto object-contain"
             />
           </div>
 
