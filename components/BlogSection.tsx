@@ -59,7 +59,7 @@ const BlogSection: React.FC = () => {
                 </div>
                 
                 <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight min-h-[3.5rem]">{post.title}</h3>
-                <p className="text-sm text-gray-500 mb-4 font-sans line-clamp-3">{post.metaDescription}</p>
+                <p className="text-sm text-gray-500 mb-4 font-sans line-clamp-3 flex-grow">{post.metaDescription}</p>
                 
                 <div className="mt-auto pt-4 border-t border-gray-50">
                     <Link 

@@ -31,7 +31,7 @@ const Problems: React.FC = () => {
           <div className="w-24 h-1 bg-brand mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {problems.map((item, index) => (
             <div key={index} className="flex items-start gap-4 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
               <div className="flex-shrink-0 bg-white p-3 rounded-lg shadow-sm">
@@ -44,7 +44,7 @@ const Problems: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-brand/5 p-8 rounded-2xl max-w-4xl mx-auto text-center border border-brand/20">
+        <div className="mt-16 bg-brand/5 p-8 rounded-2xl max-w-3xl mx-auto text-center border border-brand/20">
           <p className="text-xl text-gray-800 font-medium">
             Na Amorim Ergonomia, entendemos cada um desses desafios - e entregamos soluções rápidas, acessíveis e totalmente alinhadas às necessidades da sua empresa. Eficiência, economia e conformidade sem complicação.
           </p>

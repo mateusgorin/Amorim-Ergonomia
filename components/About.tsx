@@ -84,7 +84,7 @@ const About: React.FC = () => {
           </div>
 
           <div className="h-full lg:pl-8">
-            <div className="bg-brand/5 p-8 rounded-2xl border border-brand/10 relative overflow-hidden group h-full flex flex-col justify-center">
+            <div className="bg-brand/5 p-8 rounded-2xl border border-brand/20 bg-white shadow-sm relative overflow-hidden group h-full flex flex-col justify-center">
               <div className="absolute -right-8 -bottom-8 text-brand/5 group-hover:text-brand/10 transition-colors duration-500">
                 <MessageCircle size={180} />
               </div>

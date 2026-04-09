@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
 import ReactMarkdown from 'react-markdown';
 import { ArrowLeft, Tag } from 'lucide-react';
@@ -7,6 +7,7 @@ import { ArrowLeft, Tag } from 'lucide-react';
 const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find(p => p.slug === slug);
+  const navigate = useNavigate();
 
   if (!post) {
     return (
@@ -20,9 +21,12 @@ const BlogPostPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white pt-40 pb-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-        <Link to="/#blog" className="inline-flex items-center gap-2 text-brand font-semibold mb-8 hover:underline text-sm">
+        <button
+          onClick={() => navigate(-1)}
+          className="inline-flex items-center gap-2 text-brand font-semibold mb-8 hover:underline text-sm bg-transparent border-none cursor-pointer p-0"
+        >
           <ArrowLeft size={16} /> Voltar ao blog
-        </Link>
+        </button>
         <div className="flex flex-wrap gap-2 mb-4">
           {post.tags.map(tag => (
             <span key={tag} className="flex items-center gap-1 text-xs bg-brand/10 text-brand px-2 py-1 rounded-full font-semibold">

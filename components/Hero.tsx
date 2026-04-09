@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
             <div className="inline-block px-5 py-2 bg-brand/15 rounded-full text-brand font-bold text-xs sm:text-sm tracking-widest mb-6 border border-brand/30 shadow-sm">
               CONSULTORIA ESPECIALIZADA
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans font-semibold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-sans font-semibold text-gray-900 leading-tight">
               Sua empresa está pronta para uma <span className="text-brand">fiscalização do MTE</span>?
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-2xl font-sans">
