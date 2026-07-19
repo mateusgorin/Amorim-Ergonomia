@@ -43,7 +43,7 @@ const About: React.FC = () => {
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" />
                     <p className="text-sm text-gray-700">
-                      <strong>Técnico em Segurança do Trabalho</strong> formado pelo SENAI (2012), com registro ativo na DRT sob nº 8315.
+                      <strong>Técnico em Segurança do Trabalho</strong> formado pelo SENAI (2012), com registro ativo na DRT sob nº 8375.
                     </p>
                   </div>
                   <div className="flex items-start gap-3">
