@@ -11,10 +11,10 @@ const About: React.FC = () => {
 
   return (
     <section id="about" className="py-20 bg-white overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Row 1: Photo and Main Info */}
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-16">
-          <div className="w-full lg:w-1/2 relative flex justify-center">
+          <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-start">
             <div className="relative w-full max-w-md">
               <img 
                 src="https://res.cloudinary.com/dw5b0vlbz/image/upload/v1784554200/Whats-App-Image-2025-12-18-at-08-59-09_nbhvib.webp" 

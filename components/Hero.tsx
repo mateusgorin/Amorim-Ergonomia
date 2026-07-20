@@ -8,7 +8,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
   return (
     <section className="relative pt-36 pb-8 lg:pt-44 lg:pb-12 overflow-hidden bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           
           <div className="w-full lg:w-1/2 space-y-8 animate-fade-in-up">
@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 relative flex justify-center">
+          <div className="w-full lg:w-1/2 relative flex justify-center lg:justify-end">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white w-fit">
               <div className="absolute inset-0 bg-brand/20 mix-blend-multiply z-10 pointer-events-none"></div>
               <img 
