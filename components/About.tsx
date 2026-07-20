@@ -17,7 +17,7 @@ const About: React.FC = () => {
           <div className="w-full lg:w-1/2 relative flex justify-center">
             <div className="relative w-full max-w-xl">
               <img 
-                src="https://i.ibb.co/Hp21608R/Whats-App-Image-2025-12-18-at-08-59-09.jpg" 
+                src="https://res.cloudinary.com/dw5b0vlbz/image/upload/v1784554200/Whats-App-Image-2025-12-18-at-08-59-09_nbhvib.webp" 
                 alt="Equipe Amorim Ergonomia" 
                 loading="lazy"
                 width="600"

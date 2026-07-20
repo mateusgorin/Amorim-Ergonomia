@@ -34,6 +34,10 @@ const questions: FAQItem[] = [
   {
     question: "É possível tirar dúvidas antes de contratar?",
     answer: "Com certeza. Nosso atendimento pelo WhatsApp é direto, rápido e sem compromisso. A Vanessa responde pessoalmente — sem robôs, sem central de atendimento. Clique no botão de orçamento e tire todas as suas dúvidas gratuitamente."
+  },
+  {
+    question: "O diagnóstico de riscos psicossociais é a mesma coisa que a Análise Ergonômica (AET/AEP)?",
+    answer: "Não. Desde a atualização da NR-1 (Portaria MTE nº 765/2025), com vigência a partir de 26/05/2026, os riscos psicossociais passaram a ser uma exigência separada, que deve constar de forma própria no PGR da empresa — não basta um parágrafo genérico dentro do laudo ergonômico. Por isso, oferecemos o Diagnóstico de Riscos Psicossociais como um serviço independente, com avaliação, metodologia e plano de ação específicos, evitando autuação por documentação insuficiente."
   }
 ];
 

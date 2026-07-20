@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white w-fit">
               <div className="absolute inset-0 bg-brand/20 mix-blend-multiply z-10 pointer-events-none"></div>
               <img 
-                src="https://i.ibb.co/RWLMPHm/Whats-App-Image-2025-12-18-at-08-59-00.jpg" 
+                src="https://res.cloudinary.com/dw5b0vlbz/image/upload/v1784554232/Whats-App-Image-2025-12-18-at-08-59-00_a6ksny.webp" 
                 alt="Profissional de ergonomia avaliando ambiente" 
                 loading="eager"
                 fetchPriority="high"

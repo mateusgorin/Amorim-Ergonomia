@@ -1,5 +1,5 @@
 import React from 'react';
-import { ClipboardCheck, Users, GraduationCap, PlusCircle } from 'lucide-react';
+import { ClipboardCheck, Users, GraduationCap, PlusCircle, Brain } from 'lucide-react';
 
 interface ServicesProps {
   onOpenModal: () => void;
@@ -21,6 +21,11 @@ const Services: React.FC<ServicesProps> = ({ onOpenModal }) => {
       title: "Treinamentos em Ergonomia",
       description: "Capacitamos equipes e líderes sobre práticas ergonômicas no dia a dia, promovendo mais saúde e produtividade no ambiente corporativo.",
       icon: <GraduationCap className="w-12 h-12 text-white" />
+    },
+    {
+      title: "Diagnóstico de Riscos Psicossociais (NR-1)",
+      description: "A NR-1 atualizada passou a exigir a inclusão obrigatória dos riscos psicossociais no PGR como avaliação separada da análise ergonômica tradicional. Elaboramos o diagnóstico técnico completo — identificação de fatores de risco, metodologia de avaliação e plano de ação — em conformidade com a nova exigência, evitando autuação por documentação insuficiente.",
+      icon: <Brain className="w-12 h-12 text-white" />
     }
   ];
 
@@ -37,7 +42,7 @@ const Services: React.FC<ServicesProps> = ({ onOpenModal }) => {
           <p className="text-xl text-gray-300">Soluções completas em ergonomia para sua empresa em Brasília:</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div key={index} className="bg-gray-800 p-8 rounded-2xl hover:bg-gray-700 transition-colors border border-gray-700 group">
               <div className="bg-brand w-20 h-20 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
