@@ -2,6 +2,71 @@ import { BlogPost } from "../types";
 
 export const blogPosts: BlogPost[] = [
   {
+    title: "Riscos Psicossociais na NR-1: A Nova Exigência Obrigatória no PGR/GRO",
+    metaDescription: "Entenda a obrigatoriedade da avaliação de riscos psicossociais no PGR/GRO trazida pela nova NR-1 (Portaria MTE nº 765/2025) e saiba como evitar autuações regularizando sua empresa.",
+    imageUrl: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop",
+    tags: ["NR-1", "Riscos Psicossociais", "PGR/GRO", "Legislação"],
+    slug: "riscos-psicossociais-nr-1-nova-exigencia-obrigatoria-pgr",
+    content: `
+A saúde mental e o bem-estar no trabalho deixaram de ser temas puramente institucionais ou opcionais para as empresas brasileiras. Com a recente atualização da **Norma Regulamentadora 1 (NR-1)**, trazida pela **Portaria MTE nº 765/2025**, a identificação e a avaliação dos **riscos psicossociais** tornaram-se itens obrigatórios no Programa de Gerenciamento de Riscos (PGR) e no Gerenciamento de Riscos Ocupacionais (GRO) de todas as organizações que possuem funcionários contratados sob o regime da CLT. 
+
+Esta mudança legislativa profunda, que entrou em vigor em **26 de maio de 2026**, muda as regras do jogo na Segurança e Saúde no Trabalho (SST). Não se trata de uma mera formalidade: as empresas que não realizarem um diagnóstico estruturado e específico sobre as condições psicossociais correm sérios riscos de autuação e passivos jurídicos.
+
+Neste artigo, explicamos detalhadamente as bases técnicas desta nova exigência, como o diagnóstico deve ser estruturado na prática e por que a avaliação não pode ser negligenciada ou reduzida a um simples parágrafo genérico em laudos antigos.
+
+---
+
+## O Contexto Legal da Portaria MTE nº 765/2025
+
+A Portaria MTE nº 765/2025 consolidou e modernizou as regras de gerenciamento de riscos ocupacionais na NR-1. Entre os pontos de maior impacto está a inclusão explícita dos **fatores psicossociais de risco** como agentes nocivos à saúde que devem ser ativamente inventariados e monitorados pelas empresas, ao lado de riscos físicos, químicos, biológicos e ergonômicos.
+
+Após a entrada em vigor da norma, o Ministério do Trabalho e Emprego estabeleceu um período inicial de 90 dias de fiscalização prioritariamente orientativa (o critério da "dupla visita"). Com o encerramento desta fase orientativa, os órgãos de fiscalização passaram a autuar diretamente as empresas que não apresentam a documentação ou que possuem um PGR inadequado, amparando-se nas penalidades previstas no **artigo 201 da CLT**. 
+
+---
+
+## O que são Riscos Psicossociais no Trabalho?
+
+Os riscos psicossociais referem-se à interação entre as condições de trabalho (organização, ambiente e relações interpessoais) e as necessidades, competências e saúde mental do trabalhador. Os fatores de maior relevância técnica que devem ser avaliados incluem:
+
+1. **Sobrecarga de Trabalho:** Cobrança excessiva por produtividade, metas irreais e pressão temporal que geram fadiga intelectual e estresse agudo.
+2. **Falta de Suporte Social e Liderança:** Relações de trabalho desgastadas, falta de apoio da liderança direta e isolamento dentro da equipe.
+3. **Violência Ocupacional e Assédio:** Situações de assédio moral, assédio sexual, discriminação ou exposição constante a agressões (físicas ou verbais) no exercício das funções.
+4. **Desequilíbrio Vida-Trabalho:** Excesso de horas extras, demandas de trabalho fora do horário de expediente e falta de controle do colaborador sobre seus horários.
+5. **Ambiguidade de Papel:** Falta de clareza sobre as responsabilidades, tarefas e limites da função exercida pelo trabalhador.
+
+Se não gerenciados, esses riscos levam ao desenvolvimento de distúrbios graves como a Síndrome de Burnout, transtornos de ansiedade e depressão, aumentando exponencialmente as taxas de absenteísmo, presenteísmo, acidentes de trabalho e pedidos de demissão espontânea.
+
+---
+
+## Por que um Parágrafo Genérico no PGR ou AET Não é Suficiente?
+
+Muitas consultorias de saúde ocupacional tentam mitigar essa nova exigência inserindo um texto padronizado ou um "parágrafo genérico" nas análises ergonômicas (AET/AEP) ou no próprio inventário físico do PGR. **Essa prática é um erro técnico grave e não sobrevive a uma fiscalização criteriosa.**
+
+A avaliação de riscos psicossociais exige uma abordagem metodológica própria. Ela precisa contar com:
+* **Metodologias e Ferramentas Científicas Validadas:** Uso de questionários, entrevistas qualitativas e ferramentas psicométricas recomendadas para diagnóstico de estresse ocupacional e fatores psicossociais.
+* **Inventário Específico de Riscos:** Identificação clara de quais setores, cargos ou rotinas de trabalho expõem os colaboradores a fatores psicossociais negativos.
+* **Plano de Ação Integrado:** Não basta apontar que há "estresse elevado"; a empresa deve detalhar quais medidas coletivas, organizacionais e de acolhimento serão adotadas para reduzir os riscos, com metas e prazos bem estabelecidos.
+* **Monitoramento Contínuo:** Avaliação periódica para mensurar a eficácia das intervenções psicossociais implementadas.
+
+Portanto, o Diagnóstico de Riscos Psicossociais deve ser tratado como um **processo técnico independente**, servindo de subsídio obrigatório para alimentar o PGR global da empresa.
+
+---
+
+## Como Adequar sua Empresa Urgentemente
+
+Para que sua organização se mantenha em conformidade jurídica completa e preserve a saúde de suas equipes, recomenda-se adotar os seguintes passos:
+
+1. **Realizar o Diagnóstico Técnico:** Contratar profissionais habilitados para conduzir a avaliação qualitativa e quantitativa dos fatores psicossociais da organização.
+2. **Atualizar o Inventário de Riscos do PGR:** Integrar o diagnóstico de riscos psicossociais de forma qualificada ao escopo do seu PGR/GRO.
+3. **Implementar as Medidas do Plano de Ação:** Executar as melhorias organizacionais, treinamentos de lideranças e ações de conscientização desenhadas no diagnóstico.
+4. **Capacitar a Liderança:** Orientar gestores e coordenadores sobre como identificar precocemente sinais de adoecimento mental e formas saudáveis de gerir equipes sob pressão.
+
+Investir em um diagnóstico sério, ético e em conformidade técnica de verdade com a NR-1 protege as finanças da sua empresa contra pesadas autuações, evita passivos trabalhistas decorrentes de adoecimentos ocupacionais e, principalmente, cria um ambiente corporativo saudável, estável e produtivo.
+
+**Precisa adequar sua empresa à nova exigência de Riscos Psicossociais da NR-1 em Brasília?** Fale com a Vanessa Fonseca Amorim pelo WhatsApp e solicite uma proposta de Diagnóstico Técnico.
+    `
+  },
+  {
     title: "NR-17 Atualizada: O que mudou e como adequar sua empresa em 2025",
     metaDescription: "Entenda as principais mudanças da Norma Regulamentadora 17 e saiba como evitar multas garantindo a conformidade ergonômica do seu negócio.",
     imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop",
