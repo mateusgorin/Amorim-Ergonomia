@@ -24,7 +24,7 @@ const Services: React.FC<ServicesProps> = ({ onOpenModal }) => {
     },
     {
       title: "Diagnóstico de Riscos Psicossociais (NR-1)",
-      description: "A NR-1 atualizada passou a exigir a inclusão obrigatória dos riscos psicossociais no PGR como avaliação separada da análise ergonômica tradicional. Elaboramos o diagnóstico técnico completo — identificação de fatores de risco, metodologia de avaliação e plano de ação — em conformidade com a nova exigência, evitando autuação por documentação insuficiente.",
+      description: "A NR-1 atualizada exige a inclusão obrigatória dos riscos psicossociais no PGR, como avaliação separada da análise ergonômica tradicional. Diagnóstico técnico completo, evitando autuação por documentação insuficiente.",
       icon: <Brain className="w-12 h-12 text-white" />
     }
   ];

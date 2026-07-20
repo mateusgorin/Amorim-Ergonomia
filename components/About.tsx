@@ -15,7 +15,7 @@ const About: React.FC = () => {
         {/* Row 1: Photo and Main Info */}
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-16">
           <div className="w-full lg:w-1/2 relative flex justify-center">
-            <div className="relative w-full max-w-xl">
+            <div className="relative w-full max-w-md">
               <img 
                 src="https://res.cloudinary.com/dw5b0vlbz/image/upload/v1784554200/Whats-App-Image-2025-12-18-at-08-59-09_nbhvib.webp" 
                 alt="Equipe Amorim Ergonomia" 
