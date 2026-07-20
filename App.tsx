@@ -12,10 +12,12 @@ import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
 import BlogPostPage from './components/BlogPost';
+import PsychosocialAlert from './components/PsychosocialAlert';
 
 const HomePage: React.FC<{ openModal: () => void }> = ({ openModal }) => (
   <main id="main-content">
     <Hero onOpenModal={openModal} />
+    <PsychosocialAlert onOpenModal={openModal} />
     <Problems />
     <Services onOpenModal={openModal} />
     <Segments />
