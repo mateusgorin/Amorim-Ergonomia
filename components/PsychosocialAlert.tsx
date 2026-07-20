@@ -11,7 +11,7 @@ const PsychosocialAlert: React.FC<PsychosocialAlertProps> = ({ onOpenModal }) =>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3 text-center sm:text-left">
-            <AlertTriangle className="w-8 h-8 flex-shrink-0 hidden sm:block text-white" />
+            <AlertTriangle className="w-8 h-8 flex-shrink-0 hidden sm:block text-white animate-pulse" />
             <p className="font-semibold text-sm sm:text-base leading-snug">
               <strong>Fiscalização da NR-1 em andamento:</strong> os riscos psicossociais já são exigência obrigatória e separada no PGR. Regularize sua empresa antes de ser notificada.
             </p>
